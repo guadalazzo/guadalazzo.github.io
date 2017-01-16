@@ -4,7 +4,7 @@
 	margin:0px;
 	}
 .navbar{
-	height: 1200px;
+	height: 200vh;
 	width:100%;
 	background: url("londonwallpaper.jpg")top right no-repeat;
 	background-attachment:fixed;
@@ -12,10 +12,10 @@
 }
 
 .nav-bar{
-	
+	position:fixed;
 	margin-top: 25px;
 	justify-content: center;
-	height: 83px;
+	height: 70px;
 	width: 100%;
 	display:inline-block;
  	text-align:center;
@@ -25,11 +25,9 @@
 .nav-button{
 	margin:10px;
 	padding:15px;
-	font-size: 40px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
-	width: 33%;
-	height: 83px;
 	background-color: black !important;
 }
 .nav-button:hover {
@@ -37,4 +35,40 @@
  	color:black;
  	
 	transition-duration: 0.9s;
+}
+.button{
+	line-height: 50px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	height: 50px ;
+	width: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	border: 5px solid transparent;
+	display: inline-block;
+}
+.button:hover{
+	background-color: white;
+	border-color:black;
+	border: 5px solid;
+	color:black;
+	transition-duration: 0.9s;
+}
+
+header{
+	flex-direction: column;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	background-color:rgba(215, 174, 69, 0.61);
+}
+.about{
+	background-color: rgba(0, 18, 30, 0.66);
+	width: 100%;
+	height:100vh;
 }
