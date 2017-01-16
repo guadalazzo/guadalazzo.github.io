@@ -3,14 +3,17 @@
 	padding: 0px;
 	margin:0px;
 	}
-.navbar{
-	height: 200vh;
-	width:100%;
+body{
+
 	background: url("londonwallpaper.jpg")top right no-repeat;
 	background-attachment:fixed;
 	background-size: cover;
 }
-
+	
+.navbar{
+	height: 100vh;
+	width:100%;
+}
 .nav-bar{
 	position:fixed;
 	margin-top: 25px;
