@@ -1,19 +1,40 @@
 *{
+	font-family: 'Overpass', sans-serif;
 	padding: 0px;
 	margin:0px;
+	}
+.navbar{
+	height: 1200px;
+	width:100%;
+	background: url("londonwallpaper.jpg")top right no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
 }
 
 .nav-bar{
+	
+	margin-top: 25px;
 	justify-content: center;
 	height: 83px;
 	width: 100%;
 	display:inline-block;
  	text-align:center;
+ 	border-bottom:5px solid;
+ 	border-color: black;
 }
 .nav-button{
+	margin:10px;
+	padding:15px;
+	font-size: 40px;
 	text-decoration: none;
-	color: #d28ffc;
+	color: white;
 	width: 33%;
-	height: 80px;
-	
+	height: 83px;
+	background-color: black !important;
+}
+.nav-button:hover {
+	background-color:white !important;
+ 	color:black;
+ 	
+	transition-duration: 0.9s;
 }
