@@ -61,6 +61,7 @@ body{
 }
 
 header{
+	margin-top: 83px;
 	flex-direction: column;
 	display: flex;
     align-items: center;
