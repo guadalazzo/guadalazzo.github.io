@@ -11,19 +11,19 @@
 <body>
 	<div class="navbar">	
 		<nav class="nav-bar">
-			<a href="#" class="nav-button">Home</a>
-			<a href="#" class="nav-button">About</a>
-			<a href="#" class="nav-button">Contact</a>
+			<a href="#home" class="nav-button">Home</a>
+			<a href="#about" class="nav-button">About</a>
+			<a href="#contact" class="nav-button">Contact</a>
 			
 		</nav>
-	<header>
+	<header id="home">
 		<h1>Hello!, I'm Guadalupe Lazzo</h1>
 		<h2>Front-end developer</h2>
 		<a  class="button" href="#">a</a>	
 	</header>
 
 	</div>
-	<div class="about">
+	<div id="about">
 		<div class="bio comun">
 			<div class="info">	
 				<h1>About me:</h1>
@@ -44,6 +44,16 @@
 				<img class="logo" src="jquery.jpg" title="jquery">
 			</div>
 		</div>
+	</div>
+	<div id="contact">
+		<form>
+				<h1>Contact me:</h1>	
+			
+				<input class="nameandemail" type="text" name="Name" placeholder="Name">
+				<input class="nameandemail" type="text" name="email" placeholder="Email"> 
+				<textarea class="message" name="textarea" rows="10" cols="50" placeholder="Message"></textarea>
+
+		</form>
 	</div>
 </body>
 </html>

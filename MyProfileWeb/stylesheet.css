@@ -72,7 +72,7 @@ header{
 	text-align: center;
 	background-color:rgba(215, 174, 69, 0.61);
 }
-.about{
+#about{
 	background-color: rgba(0, 18, 30, 0.66);
 	width: 100%;
 	height:100vh;
@@ -126,8 +126,49 @@ h2{
 	width: 120px !important;
 }
 .comun{
-
 	width: 33%;
 	display: inline-block;
+}
+#contact{
+	background-color: rgba(37, 2, 2, 0.89);
+	height: 100vh;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+h1{
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+form{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	flex-direction:column;
+}
 
+input{
+	margin: 10px;
+	width: 60%;
+	align-content: center;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.nameandemail{
+height: 30px;
+}
+.message{
+	color:grey;
+	margin: 10px;
+	width: 60%;
+	align-content: center;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100px;
+	padding-top: 0px;
 }
