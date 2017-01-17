@@ -87,7 +87,6 @@ header{
 	width: 260px;
 }
 .info{
-
 	text-align: center;
 	margin-top: 68px;
 
@@ -103,17 +102,19 @@ h2{
 	text-indent: 1.5em;
 }
 .skills{
-	text-align: left;
+	text-align: center;
 	color: white;
 	margin-top: 150px;
-	
+}
+p{
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
 }
 .logos1{
 	align-items:center;
 	justify-content:left;
 	display: flex;
-	
-	
 }
 .logos2{
 	align-items:center;
