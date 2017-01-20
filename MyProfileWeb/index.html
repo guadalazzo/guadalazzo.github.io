@@ -6,15 +6,29 @@
 <title>Guadalupe Jazmin Lazzo - Frontend developer </title>
 <link rel="shortcut icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+		  	// Esto se va a ejecutar CADA VEZ QUE LA PAGINA SE MUEVA
+		  	var posicionEnY = $(this).scrollTop();
+		    console.log(posicionEnY);
+		  if(posicionEnY>0) {
+			$('.nav-bar').addClass('active');
+		  }else{
+			$('.nav-bar').removeClass('active');
+		  }
+		  });
+		}); 
+</script>
 </head>
 <body>
 	<div class="navbar">	
-		<nav class="nav-bar">
-			<a href="#home" class="nav-button">Home</a>
-			<a href="#about" class="nav-button">About</a>
-			<a href="#contact" class="nav-button">Contact</a>
-			
+		<nav class="nav-bar active">
+			<a href="#home" class="nav-button ">Home</a>
+			<a href="#about" class="nav-button ">About</a>
+			<a href="#contact" class="nav-button ">Contact</a>	
 		</nav>
 	<header id="home">
 		<h1>Hello!, I'm Guadalupe Lazzo</h1>
@@ -46,13 +60,13 @@
 		</div>
 	</div>
 	<div id="contact">
-		<form>
+		<form action="https://formspree.io/lupe_m13_92@hotmail.com" method="POST">
 				<h1>Contact me:</h1>	
 			
 				<input class="nameandemail" type="text" name="Name" placeholder="Name">
-				<input class="nameandemail" type="text" name="email" placeholder="Email"> 
+				<input class="nameandemail" type="email" name="_replyto" placeholder="Email"> 
 				<textarea class="message" name="textarea" rows="10" cols="50" placeholder="Message"></textarea>
-				<button class="button submit">submit</button>
+				<input class="button submit" type="submit" value="Send">
 
 		</form>
 	</div>

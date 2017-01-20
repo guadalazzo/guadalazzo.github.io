@@ -16,7 +16,8 @@ body{
 	width:100%;
 }
 .nav-bar{
-	top:25px;
+	padding-top: 25px;
+	top:0;
 	position:fixed;
 	justify-content: center;
 	height: 70px;
@@ -25,6 +26,9 @@ body{
  	text-align:center;
  	border-bottom:5px solid;
  	border-color: black;
+}
+.nav-bar.active {
+	background-color: white;
 }
 .nav-button{
 	margin:10px;
