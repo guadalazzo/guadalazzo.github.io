@@ -14,14 +14,16 @@
 		  	// Esto se va a ejecutar CADA VEZ QUE LA PAGINA SE MUEVA
 		  	var posicionEnY = $(this).scrollTop();
 		    console.log(posicionEnY);
-		  if(posicionEnY>0) {
-			$('.nav-bar').addClass('active');
-		  }else{
-			$('.nav-bar').removeClass('active');
-		  }
+		  	if(posicionEnY>0) {
+				$('.nav-bar').addClass('active');
+		  	}else{
+				$('.nav-bar').removeClass('active');
+		  	}
 		  });
 		}); 
 </script>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 	<div class="navbar">	
@@ -41,7 +43,7 @@
 		<div class="bio comun">
 			<div class="info">	
 				<h1>About me:</h1>
-				<h2>My name is Guadalupe Jazmin Lazzo, i'm 24 years old and i'm a frontend developer. Currently i'm studing Engineering in information systems at UTN, also i do a technicature of Design and Promotion Advertising, As well as a technicature in production of clothing. I'm passionate about technology and creating new things!</h2>
+				<h2>My name is Guadalupe Jazmin Lazzo, i'm 24 years old and i'm a frontend developer. Currently i'm studing Engineering in information systems at UTN, also i did a technical of Design and Promotion Advertising, As well as a technical in production of clothing. I'm passionate about technology and creating new things!</h2>
 			</div>
 		</div>
 			<div class="comun">	
@@ -62,12 +64,17 @@
 	<div id="contact">
 		<form action="https://formspree.io/lupe_m13_92@hotmail.com" method="POST">
 				<h1>Contact me:</h1>	
-			
+				
 				<input class="nameandemail" type="text" name="Name" placeholder="Name">
 				<input class="nameandemail" type="email" name="_replyto" placeholder="Email"> 
 				<textarea class="message" name="textarea" rows="10" cols="50" placeholder="Message"></textarea>
 				<input class="button submit" type="submit" value="Send">
-
+				<h1>Also can find me at:</h1>
+				<div class="icons">	
+				<a href="http://www.linkedin.com/in/guadalupe-jazmin-lazzo-764243137"><i class="fa fa-linkedin fa-4x " aria-hidden="true"></i></a>
+				<a href="https://github.com/guadalazzo"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+				<a href="mailto:lupe_m13_92@hotmail.com"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+				</div>
 		</form>
 	</div>
 </body>

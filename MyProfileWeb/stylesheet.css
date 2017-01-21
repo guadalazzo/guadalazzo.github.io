@@ -182,7 +182,17 @@ height: 30px;
 	padding-top: 0px;
 }
 .submit{
-	width: 60%;
 	padding-bottom: 40px;
 	font-size: 25px;
+}
+a{
+	color: white;
+}
+i{
+	margin: 10px;
+}
+a:hover{
+	transition-duration: 0.9s;
+	color: black;
+	text-shadow: -31px -11px 23px rgba(255, 255, 255, 1);
 }
