@@ -1,0 +1,198 @@
+
+*{
+	font-family: 'Overpass', sans-serif;
+	padding: 0px;
+	margin:0px;
+	}
+
+body{
+	background: url("londonwallpaper.jpg")top right no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+}
+	
+.navbar{
+	height: 100vh;
+	width:100%;
+}
+.nav-bar{
+	padding-top: 25px;
+	top:0;
+	position:fixed;
+	justify-content: center;
+	height: 70px;
+	width: 100%;
+	display:inline-block;
+ 	text-align:center;
+ 	border-bottom:5px solid;
+ 	border-color: black;
+}
+.nav-bar.active {
+	background-color: white;
+}
+.nav-button{
+	margin:10px;
+	padding:15px;
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	background-color: black !important;
+}
+.nav-button:hover {
+	background-color:white !important;
+ 	color:black;
+ 	
+	transition-duration: 0.9s;
+}
+.button{
+	line-height: 50px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	height: 50px ;
+	
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	border: 5px solid transparent;
+	display: block;
+	padding-bottom: 5px;
+	margin-top: 20px
+
+}
+.button:hover{
+	background-color: white;
+	border-color:black;
+	border: 5px solid;
+	color:black;
+	transition-duration: 0.9s;
+}
+
+header{
+	margin-top: 95px;
+	flex-direction: column;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	background-color:rgba(215, 174, 69, 0.61);
+}
+#about{
+	background-color: rgba(0, 18, 30, 0.66);
+	width: 100%;
+	height:100vh;
+	display: inline-flex;
+}
+.avatar{
+
+
+	margin: 200px 50px 50px 90px;
+	border-radius: 50%;
+	height: 260px;
+	width: 260px;
+}
+.info{
+	text-align: center;
+	margin-top: 68px;
+
+	color: white;
+}
+.bio{
+	
+	margin-top: 95px;
+	width: 75%;
+	height:50vh;
+}
+h2{
+	text-indent: 1.5em;
+}
+.skills{
+	text-align: center;
+	color: white;
+	margin-top: 150px;
+}
+p{
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+}
+.logos1{
+	align-items:center;
+	justify-content:left;
+	display: flex;
+}
+.logos2{
+	align-items:center;
+	justify-content: left;
+	display: flex;
+}
+.logo{
+	margin: 25px;
+	height: 120px !important;
+	width: 120px !important;
+}
+.comun{
+	width: 33%;
+	display: inline-block;
+}
+#contact{
+	background-color: rgba(37, 2, 2, 0.89);
+	height: 100vh;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+h1{
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+form{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: 500px;
+	flex-direction:column;
+}
+
+input{
+	margin: 10px;
+	width: 60%;
+	align-content: center;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.nameandemail{
+height: 30px;
+}
+.message{
+	color:grey;
+	margin: 10px;
+	width: 60%;
+	align-content: center;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100px;
+	padding-top: 0px;
+}
+.submit{
+	padding-bottom: 40px;
+	font-size: 25px;
+}
+a{
+	color: white;
+}
+i{
+	margin: 10px;
+}
+a:hover{
+	transition-duration: 0.9s;
+	color: black;
+	text-shadow: -31px -11px 23px rgba(255, 255, 255, 1);
+}
