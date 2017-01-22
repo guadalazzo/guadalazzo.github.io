@@ -172,6 +172,9 @@ header{
 	background-color: black;
 }
 @media (min-width: 992px) {
+	.navbar .nav-bar{
+		display: block;
+	}
 	.navbar{
 		width:100%;
 	}
