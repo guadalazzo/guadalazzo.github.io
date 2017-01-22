@@ -8,39 +8,25 @@
 <title>Guadalupe Jazmin Lazzo - Frontend developer </title>
 <link rel="shortcut icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript">
-	
-		$(document).ready(function(){
-		  $(window).scroll(function(){
-		  	// Esto se va a ejecutar CADA VEZ QUE LA PAGINA SE MUEVA
-		  	var posicionEnY = $(this).scrollTop();
-		    console.log(posicionEnY);
-		  	if(posicionEnY>0) {
-				$('.nav-bar').addClass('active');
-		  	}else{
-				$('.nav-bar').removeClass('active');
-		  	}
-		  });
-		}); 
-</script>
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-	<div class="navbar">	
+	<div class="navbar ">
+		<a class="navbar-toggled" href="#"><i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+</a>
 		<nav class="nav-bar active">
 			<a href="#home" class="nav-button ">Home</a>
 			<a href="#about" class="nav-button ">About</a>
 			<a href="#contact" class="nav-button ">Contact</a>	
 		</nav>
+	</div>
 	<header id="home">
 		<h1>Hello!, I'm Guadalupe Lazzo</h1>
 		<h2>Front-end developer</h2>
 		<a  class="button" href="#about">See more about me</a>	
 	</header>
 
-	</div>
 	<div id="about">
 		<div class="bio comun">
 			<div class="info">	
@@ -80,5 +66,24 @@
 				</div>
 		</form>
 	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	
+$(document).ready(function(){
+	$('.navbar-toggled').click( function(){
+		console.log('clickeaste el navbar');
+		$('.navbar').toggleClass('toggled');
+	});
+	$(window).scroll(function(){
+		// Esto se va a ejecutar CADA VEZ QUE LA PAGINA SE MUEVA
+		var posicionEnY = $(this).scrollTop();
+		if(posicionEnY>0) {
+			$('.nav-bar').addClass('active');
+		}else{
+			$('.nav-bar').removeClass('active');
+		}
+	});
+}); 
+</script>
 </body>
 </html>
