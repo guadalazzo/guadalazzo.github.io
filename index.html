@@ -16,8 +16,8 @@
 		<a class="navbar-toggled" href="#"><i class="fa fa-bars fa-3x" aria-hidden="true"></i>
 </a>
 		<nav class="nav-bar active">
-			<a href="#home" class="nav-button ">Home</a>
-			<a href="#about" class="nav-button ">About</a>
+			<a href="#home" class="nav-button">Home</a>
+			<a href="#about" class="nav-button">About</a>
 			<a href="#portfolio" class="nav-button">Portfolio</a>
 			<a href="#contact" class="nav-button ">Contact</a>	
 		</nav>
@@ -31,8 +31,7 @@
 	<div id="about">
 		<div class="bio comun">
 			<div class="info">	
-				
-				<p>My name is Guadalupe Jazmin Lazzo, i'm 24 years old and i'm a frontend developer. Currently i'm studing Engineering in information systems at UTN, also i did a technical of Design and Promotion Advertising, As well as a technical in production of clothing. I'm passionate about technology and creating new things!</p>
+				<p>My name is Guadalupe Jazmin Lazzo, I'm 24 years old and I'm a frontend developer. Currently I'm studing Engineering in information systems at UTN, also i did a technical of Design and Promotion Advertising, As well as a technical in production of clothing. I'm passionate about technology and creating new things!</p>
 			</div>
 		</div>
 		<div class="comun avatar-container">	
@@ -96,6 +95,13 @@
 <script type="text/javascript">
 	
 $(document).ready(function(){
+	$("nav a").click(function(e){
+		e.preventDefault();
+		var elemento = $($(this).attr("href"));
+		$('html,body').animate({scrollTop: elemento.offset().top},'slow')
+		return false;
+	})
+
 	$('.navbar-toggled').click( function(){
 		console.log('clickeaste el navbar');
 		$('.navbar').toggleClass('toggled');
