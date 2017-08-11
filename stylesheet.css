@@ -29,7 +29,7 @@ body{
 	justify-content:center;
 	display: flex;
 }
-.logos1 img, .logos2 img{
+.logos1 embed,.logos1 img, .logos2 img{
 	border-radius: 10px;
 }
 a{
