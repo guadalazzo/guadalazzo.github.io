@@ -31,7 +31,7 @@
 	<div id="about">
 		<div class="bio comun">
 			<div class="info">	
-				<p>My name is Guadalupe Jazmin Lazzo, I'm 24 years old and I'm a frontend developer. Currently I'm studing Engineering in information systems at UTN, also i did a technical of Design and Promotion Advertising, As well as a technical in production of clothing. I'm passionate about technology and creating new things!</p>
+				<p>My name is Guadalupe Jazmin Lazzo, I'm 25 years old and I'm a frontend developer. Currently I'm studing Engineering in information systems at UTN, also i did a technical of Design and Promotion Advertising, As well as a technical in production of clothing. I'm passionate about technology and creating new things!</p>
 			</div>
 		</div>
 		<div class="comun avatar-container">	
@@ -40,18 +40,26 @@
 		<div class="skills comun">
 			<p>Skills:</p>
 			<div class="logos1">	
-				<img class="logo" src="img/js.jpg" title="javascript">
-				<img class="logo" src="img/css3.jpg" title="css3">
+				<img class="logo" src="img/angular2.jpg" title="angular2">
+				<img class="logo" src="img/react.svg" title="react">
 			</div>
 			<div class="logos2">	
 
-				<img class="logo" src="img/html5.png" title="html">
+				<img class="logo" src="img/js.jpg" title="html">
 				<img class="logo" src="img/jquery.jpg" title="jquery">
 			</div>
 		</div>
 	</div>
 	<div id="portfolio">
 		<div class="demos">
+			<div class="projects demo">
+				<h1>Octolive</h1>
+				<p>When you manage or contribute in more than 1 active proyects in Github,<br> you start noticing that Github Notifications are pretty boring.<br>
+				This proyect tries to solve that, providing a better notification system, in realtime!</p>
+				<a href="https://octolive.xyz">
+					<img class="p-img" src="img/octolive.png">
+				</a>
+			</div>
 			<div class="demo">
 				<h1>World Clocks</h1>
 				<p>A few clock from important cities with his respective hours made with jquery moments library.</p>
@@ -103,7 +111,6 @@ $(document).ready(function(){
 	})
 
 	$('.navbar-toggled').click( function(){
-		console.log('clickeaste el navbar');
 		$('.navbar').toggleClass('toggled');
 	});
 	$(window).scroll(function(){
