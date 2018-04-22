@@ -12,12 +12,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
 	<!-- font-family: 'Lora', serif; -->
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-
 </head>
 
 <body>
 	<article id="home" data-stellar-background-ratio="0">
-		<section id="presentation">
+		<section id="presentation" >
 			<img class="avatar" src="img/newavatar.png" alt="this is lupe">
 			<h1>Hello!, I'm Guadalupe Lazzo</h1>
 			<h4>Front-end developer</h4>
@@ -37,19 +36,21 @@
 			</li>
 		</ul>
 	</article>
-<article id="about">
+	<div class="with-header">
 	<nav> 
 		<a href="#home">home</a>
 		<a href="#about">about</a>
 		<a href="#portfolio">portfolio</a>
 	</nav>
+		
+<article id="about">
 	<section>
 		<h2>Who am I?</h2>
 		<p>
 			My name is Guadalupe Jazmin Lazzo, I'm 25 years old and I'm a frontend developer, Co-organizer at freeCodeCamp, I actively participate at development meetups, love to participate in hackatons, strongly support appling UX and UI design, also working with frameworks as React. Currently I'm studying Engineering in information systems at UTN, also I did a technical degree of Design and Promotion Advertising, As well as a technical degree in production of clothing. I'm passionate about technology and creating new things!
 		</p>
 		<h3>Skills</h3>
-		<ul class="items">
+		<ul   class="items">
 			<li>
 			<i class="fab fa-html5 fa-3x"></i>
 				<p>Html5</p>
@@ -58,7 +59,7 @@
 			<i class="fab fa-css3-alt fa-3x"></i>
 			<p>Css3</p>
 			</li>
-			<li>
+			<li >
 			<i class="fab fa-js fa-3x"></i>
 				<p>Javascript</p>
 			</li>
@@ -89,6 +90,10 @@
 		</ul>
 	</section>
 </article>
+<article id="portfolio">
+	
+</article>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.stellar.min.js"></script>
 <script>
@@ -109,8 +114,8 @@ $(window).stellar({
 				horizontalScrolling: false,
 				responsive: true,
 				parallaxBackgrounds: true,
-				hideDistantElements: true,
-	  		verticalOffset: 100,
+				hideDistantElements: false,
+	  		verticalOffset: -100,
 	  		positionProperty: 'transform'
 			});
 </script>
