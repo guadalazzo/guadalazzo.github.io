@@ -117,14 +117,16 @@ table {
       letter-spacing: 2px;
       color: #392759;
       font-weight: bold;
-      text-shadow: 2px 2px 2px #969696; }
+      text-shadow: 2px 2px 2px #969696;
+      text-align: center; }
     #home #presentation h4 {
       font-size: 24px;
       letter-spacing: 1px;
       font-weight: 600;
       font-family: "Lora", serif;
       color: #6874E8;
-      text-shadow: 2px 2px 2px #969696; }
+      text-shadow: 2px 2px 2px #969696;
+      text-align: center; }
   #home .button-scroll {
     cursor: pointer;
     text-align: center;
@@ -140,7 +142,7 @@ table {
     width: 130px;
     justify-content: space-around; }
     #home .contact-bubbles a {
-      color: white;
+      color: #7A5C61;
       transition: 0.5s ease-in-out; }
       #home .contact-bubbles a:hover {
         color: #F7B3D3; }
