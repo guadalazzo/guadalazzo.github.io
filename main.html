@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Guadalupe Jazmin Lazzo - Frontend developer </title>
 	<link rel="shortcut icon" type="image/ico"  href="/favicon.ico">
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">
 	<!-- font-family: 'Merriweather', serif; -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
 	<!-- font-family: 'Lora', serif; -->
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<article id="home">
+	<article id="home" data-stellar-background-ratio="0">
 		<section id="presentation">
 			<img class="avatar" src="img/newavatar.png" alt="this is lupe">
 			<h1>Hello!, I'm Guadalupe Lazzo</h1>
@@ -27,10 +27,10 @@
 		</div>
 		<ul class="contact-bubbles">
 			<li>
-				<a href="https://github.com/guadalazzo"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+				<a href="https://github.com/guadalazzo"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
 			</li>
 			<li>
-				<a href="http://www.linkedin.com/in/guadalupe-jazmin-lazzo-764243137"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
+				<a href="http://www.linkedin.com/in/guadalupe-jazmin-lazzo-764243137"><i class="fab fa-linkedin fa-2x " aria-hidden="true"></i></a>
 			</li>
 			<li>
 				<a href="mailto:lupe_m13_92@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
@@ -38,13 +38,71 @@
 		</ul>
 	</article>
 <article id="about">
-	<h2>Who am I?</h2>
+	<nav> 
+		<a href="#home">home</a>
+		<a href="#about">about</a>
+		<a href="#portfolio">portfolio</a>
+	</nav>
+	<section>
+		<h2>Who am I?</h2>
+		<p>
+			My name is Guadalupe Jazmin Lazzo, I'm 25 years old and I'm a frontend developer, Co-organizer at freeCodeCamp, I actively participate at development meetups, love to participate in hackatons, strongly support appling UX and UI design, also working with frameworks as React. Currently I'm studying Engineering in information systems at UTN, also I did a technical degree of Design and Promotion Advertising, As well as a technical degree in production of clothing. I'm passionate about technology and creating new things!
+		</p>
+		<h3>Skills</h3>
+		<ul class="items">
+			<li>
+			<i class="fab fa-html5 fa-3x"></i>
+				<p>Html5</p>
+			</li>
+			<li>
+			<i class="fab fa-css3-alt fa-3x"></i>
+			<p>Css3</p>
+			</li>
+			<li>
+			<i class="fab fa-js fa-3x"></i>
+				<p>Javascript</p>
+			</li>
+			<li>
+			<i class="fab fa-react fa-3x"></i>	
+				<p>React</p>
+			</li>
+			<li>
+			<i class="fab fa-angular fa-3x"></i>	
+				<p>AngularJs</p>
+			</li>
+			<li>
+			<i class="fab fa-sass fa-3x"></i>
+				<p>Sass</p>
+			</li>
+			<li>
+			<i class="fab fa-less fa-3x"></i>	
+				<p>Less</p>
+			</li>
+			<li>
+			<i class="fab fa-git fa-3x"></i>	
+			<p>Git</p>
+			</li>
+			<li>
+			<i class="fab fa-linux fa-3x"></i>	
+				<p>Linux</p>
+			</li>
+		</ul>
+	</section>
 </article>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.stellar.min.js"></script>
 <script>
+$(document).ready(function(){
+	$("nav a").click(function(e){
+		e.preventDefault();
+		var elemento = $($(this).attr("href"));
+		$('html,body').animate({scrollTop: elemento.offset().top},'slow');
+		return false;
+	});
+});
 
 $('.button-scroll').click(function(){
-    $('html, body').animate({scrollTop:$(window).height()}, 500);
+    $('html, body').animate({scrollTop:$(window).height()}, 700);
     });
 
 $(window).stellar({
