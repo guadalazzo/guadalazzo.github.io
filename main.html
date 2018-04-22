@@ -22,7 +22,39 @@
 			<h1>Hello!, I'm Guadalupe Lazzo</h1>
 			<h4>Front-end developer</h4>
 		</section>
+		<div class="button-scroll">
+			<img src="img/button-scroll.svg" alt="nextpage">
+		</div>
+		<ul class="contact-bubbles">
+			<li>
+				<a href="https://github.com/guadalazzo"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="http://www.linkedin.com/in/guadalupe-jazmin-lazzo-764243137"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="mailto:lupe_m13_92@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+			</li>
+		</ul>
 	</article>
+<article id="about">
+	<h2>Who am I?</h2>
+</article>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
 
+$('.button-scroll').click(function(){
+    $('html, body').animate({scrollTop:$(window).height()}, 500);
+    });
+
+$(window).stellar({
+				horizontalScrolling: false,
+				responsive: true,
+				parallaxBackgrounds: true,
+				hideDistantElements: true,
+	  		verticalOffset: 100,
+	  		positionProperty: 'transform'
+			});
+</script>
 </body>
 </html>
