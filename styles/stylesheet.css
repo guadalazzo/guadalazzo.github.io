@@ -1,0 +1,323 @@
+
+*{
+	font-family: 'Overpass', sans-serif;
+	padding: 0px;
+	margin:0px;
+	}
+
+body{
+	background: url("img/londonwallpaper.jpg")top right no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+.nav-bar.active {
+	background-color: white;
+}
+.nav-button:hover {
+	background-color:white !important;
+ 	color:black;
+}
+
+.logos1{
+	align-items:center;
+	justify-content:center;
+	display: flex;
+}
+.logos2{
+	align-items:center;
+	justify-content:center;
+	display: flex;
+}
+.logos1 embed,.logos1 img, .logos2 img{
+	border-radius: 10px;
+}
+a{
+	color: white;
+}
+form{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	flex-direction:column;
+}
+
+#about{
+	padding-top: 20px;
+	background-color: rgba(0, 18, 30, 0.66);
+  width: 90%;
+  height: 300vh;
+  display: block;
+  padding: 0 5%;
+}
+#contact{
+	padding-top: 15px;
+	background-color: rgba(37, 2, 2, 0.89);
+	min-height: 110vh;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+h1{
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+input{
+	margin: 10px;
+	width: 60%;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	align-content: center;
+	border-radius: 10px;
+	padding: 10px;
+}
+.message{
+	font-size: 1.2em;
+	color:grey;
+	margin: 10px;
+	width: 60%;
+	align-content: center;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100px;
+	padding-top: 10px;
+}
+i{
+	margin: 10px;
+}
+.comun{
+	height: 100vh;
+	width: 100%;
+	display: block;
+}
+.info{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	height: 100vh;
+	//margin-left: 30px;
+}
+p{
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.avatar{
+	border-radius: 50%;
+	height: 260px;
+	width: 260px;
+}
+.avatar-container{
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.logo { 
+	margin: 25px;
+	height: 120px !important;
+	width: 120px !important;
+}
+header{
+	flex-direction: column;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	background-color:rgba(215, 174, 69, 0.61);
+}
+.button{
+	color: white;
+	background-color: black;
+	border-radius: 10px;	
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	border: 5px solid transparent;
+	display: block;
+	padding:10px;
+	margin-top: 15px;
+	transition-duration: 0.9s;
+}
+.button:hover{
+	background-color: white;
+	border-color:black;
+	border: 5px solid;
+	color:black;
+}
+.navbar.toggled nav a{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	padding-left: 15px;
+	display: block;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.navbar.toggled .nav-bar{
+	display: block;
+}
+.navbar .nav-bar{
+	display: none;
+}
+.navbar-toggled{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 60px;
+	text-align: right;
+	background-color: black;
+}
+.skills{
+	text-align: center;
+	color: white;
+}
+.glamit.demo{
+	height: 122vh;
+	justify-content: space-around;
+}
+.demo{
+	width: 100%;
+	height: 105vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 18, 30, 0.66);
+	color: white;
+}
+.p-img{
+	margin-top: 20px;
+	height: 250px;
+	width: 350px;
+	object-fit: contain;
+}
+.t-img{
+	margin-top: 20px;
+	height: 250px;
+	width: 350px;
+	object-fit: contain;
+}
+.r-img{
+	margin-top: 20px;
+	height: 250px;
+	width: 350px;
+	object-fit: contain;
+}
+.glamit-pages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-top: 1em;
+    width: 72vw;
+    padding: 15px;
+    height: 98vh;
+}
+.glamit-pages a img{
+	width: 207px;
+    display: block;
+}
+@media (min-width: 992px) {
+	.demo{
+	width: 100%;
+	height: 115vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(0, 18, 30, 0.66);
+	color: white;
+}
+	.glamit-pages{
+		height: 59vh;
+	}
+	.navbar .nav-bar{
+		display: block;
+	}
+	.navbar{
+		width:100%;
+	}
+	.nav-bar{
+		padding-top: 25px;
+		top:0;
+		position:fixed;
+		justify-content: center;
+		height: 53px;
+		width: 100%;
+		display:inline-block;
+	 	text-align:center;
+	 	border-bottom:5px solid;
+	 	border-color: black;
+	}
+	.nav-button{
+		margin:10px;
+		text-decoration: none;
+		display: inline !important;
+		padding: 4px !important;
+    	font-size: 23px;
+		width: auto !important;
+		color: white;
+		background-color: black !important;
+		transition-duration: 0.9s;
+	}
+	.navbar-toggled{
+		display: none;
+	}
+	header{
+		margin-top: 83px;
+	}
+
+	#about{
+		min-height: 100vh;
+		height: auto;
+		width: 96%;
+    padding: 2%;
+	}
+	h2{
+		text-indent: 1.5em;
+	}
+	.comun{
+		display: flex !important;
+	    align-items: center;
+	    justify-content: center;
+	    flex-direction: column;
+		width: 33%;
+		display:block;
+		float: left;
+	}
+	.submit{
+		font-size: 25px;
+	}
+	a:hover{
+		transition-duration: 0.9s;
+		color: black;
+		text-shadow: -31px -11px 23px rgba(255, 255, 255, 1);
+	}
+	.p-img{
+		margin-top: 20px;
+		height: 60vh;
+		width: 60vw;
+	}
+	.t-img{
+		margin-top: 20px;
+		height: 60vh;
+		width: 60vw;
+	}
+	.r-img{
+		margin-top: 20px;
+		height: 60vh;
+		width: 60vw;
+	}
+
+}

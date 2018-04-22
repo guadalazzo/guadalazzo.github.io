@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
 	<title>Guadalupe Jazmin Lazzo - Frontend developer </title>
 	<link rel="shortcut icon" type="image/ico"  href="/favicon.ico">
 	<link rel="stylesheet" href="fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">
@@ -42,7 +43,6 @@
 		<a href="#about">about</a>
 		<a href="#portfolio">portfolio</a>
 	</nav>
-		
 <article id="about">
 	<section>
 		<h2>Who am I?</h2>
@@ -91,11 +91,26 @@
 	</section>
 </article>
 <article id="portfolio">
-	
+	<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/clara-home.png"></div>
+        <div class="swiper-slide"><img src="img/clara-eshop.png"></div>
+        <div class="swiper-slide"><img src="img/ficha-clara.png"></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+ 
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
 </article>
 </div>
+<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 <script>
 $(document).ready(function(){
 	$("nav a").click(function(e){
@@ -119,5 +134,28 @@ $(window).stellar({
 	  		positionProperty: 'transform'
 			});
 </script>
+ <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  </script>
 </body>
 </html>
