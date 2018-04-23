@@ -118,17 +118,48 @@
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
 	</section>
-		<section class="octolive item-portfolio">
+	<section class="octolive item-portfolio">
 		<p>Octolive</p>
 		<div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/babycottons.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/eshop.html"><img src="img/baby-locales.jpg"></a></div>
+        <div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octolive.jpg"></a></div>
+        <div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octo-inside.jpg"></a></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
+    <div class="repo-link">
+    	<a href="https://github.com/6700/octolive"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+    	<p>github repo</p>
+    </div>
+	</section>
+	<section class="empathy item-portfolio">
+		<p>Empathy - Hackaton Bellatrix</p>
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/empathy.jpg"></a></div>
+        <div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/emphaty-2.jpg"></a></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="repo-link">
+    	<a href="https://github.com/hdf1986/hackatrix"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+    	<p>github repo</p>
+    </div>
+    
+	</section>
+	<section class="galicia item-portfolio">
+		<p>BiomeTricks - Hackaton Galicia</p>
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/landing"><img src="img/galicia.jpg"></a></div>
+        <div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/"><img src="img/galicia-2.jpg"></a></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="repo-link">
+    	<a href="https://github.com/hdf1986/galicia"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+    	<p>github repo</p>
+    </div>
 	</section>
 </div>
 </article>
@@ -169,7 +200,9 @@ $(window).stellar({
     pagination: {
       el: '.swiper-pagination',
     },
-
+    autoplay: {
+    	delay: 5000,
+  	},
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',

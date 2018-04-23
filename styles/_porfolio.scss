@@ -1,6 +1,6 @@
 @import '_var.scss';
 #portfolio{
-	margin-top: 2em;
+	padding-top: 2em;
 	height: fit-content;
 	width: 100%;
 	display: flex;
@@ -14,7 +14,7 @@
 		color: $bluegray;
 	}
 	.item-portfolio{
-		margin-top: 1em;
+		margin: 1em auto;
 	}
 	h2{
 			color: $lightpink;
@@ -35,8 +35,32 @@
 			font-size: 16px;
 			}
 		}
+		.repo-link{
+		position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 9;
+    color: $lightpink;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    	p,a{
+    		color: $lightpink;
+    		font-size: 14px;
+    	}
+    	&:hover{
+    		p,a{
+    			color: white;
+    			text-shadow: 2px 0px 11px #000000;
+    		}
+    	}
+		}
 	.swiper-container{
 		height: 75vh;
+		@media (max-width:1000px){
+			height: 26vh;
+		}
+
 		width: 95%;
 		margin: 0 auto;
 		img{
