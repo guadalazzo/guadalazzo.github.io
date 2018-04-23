@@ -1,219 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
-	<title>Guadalupe Jazmin Lazzo - Frontend developer </title>
-	<link rel="shortcut icon" type="image/ico"  href="/favicon.ico">
-	<link rel="stylesheet" href="fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">
-	<!-- font-family: 'Merriweather', serif; -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-	<!-- font-family: 'Lora', serif; -->
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-</head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+<title>Guadalupe Jazmin Lazzo - Frontend developer </title>
+<link rel="shortcut icon" type="image/ico"  href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
+</head>
 <body>
-	<article id="home" data-stellar-background-ratio="0">
-		<section id="presentation" >
-			<img class="avatar" src="img/newavatar.png" alt="this is lupe">
-			<h1>Hello!, I'm Guadalupe Lazzo</h1>
-			<h4>Front-end developer</h4>
-		</section>
-		<div class="button-scroll">
-			<img src="img/button-scroll.svg" alt="nextpage">
+	<div class="navbar ">
+		<a class="navbar-toggled" href="#"><i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+</a>
+		<nav class="nav-bar active">
+			<a href="#home" class="nav-button">Home</a>
+			<a href="#about" class="nav-button">About</a>
+			<a href="#portfolio" class="nav-button">Portfolio</a>
+			<a href="#contact" class="nav-button ">Contact</a>	
+		</nav>
+	</div>
+	<header id="home">
+		<h1>Hello!, I'm Guadalupe Lazzo</h1>
+		<h2>Front-end developer</h2>
+		<a  class="button" href="#about">See more about me</a>	
+	</header>
+
+	<div id="about">
+		<div class="bio comun">
+			<div class="info">	
+				<p>My name is Guadalupe Jazmin Lazzo, I'm 25 years old and I'm a frontend developer. Currently I'm studying Engineering in information systems at UTN, also I did a technical degree of Design and Promotion Advertising, As well as a technical degree in production of clothing. I'm passionate about technology and creating new things!</p>
+			</div>
 		</div>
-		<ul class="contact-bubbles">
-			<li>
-				<a href="https://github.com/guadalazzo"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-			</li>
-			<li>
-				<a href="http://www.linkedin.com/in/guadalupe-jazmin-lazzo-764243137"><i class="fab fa-linkedin fa-2x " aria-hidden="true"></i></a>
-			</li>
-			<li>
-				<a href="mailto:lupe_m13_92@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-			</li>
-		</ul>
-	</article>
-	<div class="with-header">
-	<nav> 
-		<a href="#home">home</a>
-		<a href="#about">about</a>
-		<a href="#portfolio">portfolio</a>
-	</nav>
-<article id="about">
-	<section>
-		<h2>Who am I?</h2>
-		<p>
-			My name is Guadalupe Jazmin Lazzo, I'm 25 years old and I'm a frontend developer, Co-organizer at freeCodeCamp, I actively participate at development meetups, love to participate in hackatons, strongly support appling UX and UI design, also working with frameworks as React. Currently I'm studying Engineering in information systems at UTN, also I did a technical degree of Design and Promotion Advertising, As well as a technical degree in production of clothing. I'm passionate about technology and creating new things!
-		</p>
-		<h3>Skills</h3>
-		<ul   class="items">
-			<li>
-			<i class="fab fa-html5 fa-3x"></i>
-				<p>Html5</p>
-			</li>
-			<li>
-			<i class="fab fa-css3-alt fa-3x"></i>
-			<p>Css3</p>
-			</li>
-			<li >
-			<i class="fab fa-js fa-3x"></i>
-				<p>Javascript</p>
-			</li>
-			<li>
-			<i class="fab fa-react fa-3x"></i>	
-				<p>React</p>
-			</li>
-			<li>
-			<i class="fab fa-angular fa-3x"></i>	
-				<p>AngularJs</p>
-			</li>
-			<li>
-			<i class="fab fa-sass fa-3x"></i>
-				<p>Sass</p>
-			</li>
-			<li>
-			<i class="fab fa-less fa-3x"></i>	
-				<p>Less</p>
-			</li>
-			<li>
-			<i class="fab fa-git fa-3x"></i>	
-			<p>Git</p>
-			</li>
-			<li>
-			<i class="fab fa-linux fa-3x"></i>	
-				<p>Linux</p>
-			</li>
-		</ul>
-	</section>
-</article>
-<article id="portfolio">
-	<h2>Portfolio</h2>
-	<section class="clara item-portfolio">
-			
-		<p>Clara ibarguren</p>
-		<div class="swiper-container">
-	    <!-- Additional required wrapper -->
-	    <div class="swiper-wrapper">
-	        <!-- Slides -->
-	        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/clara-home.jpg"></a></div>
-	        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/eshop.html"><img src="img/clara-galeria.jpg"></a></div>
-	        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/claraficha.jpg"></a></div>
-	    </div>
-	    <!-- If we need pagination -->
-	    <div class="swiper-pagination"></div>
-	</section> 
-	<section class="babycottons item-portfolio">
-		<p>Babycottons</p>
-		<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/babycottons.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/eshop.html"><img src="img/baby-locales.jpg"></a></div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-	</section>
-	<section class="octolive item-portfolio">
-		<p>Octolive</p>
-		<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octolive.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octo-inside.jpg"></a></div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <div class="repo-link">
-    	<a href="https://github.com/6700/octolive"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-    	<p>github repo</p>
-    </div>
-	</section>
-	<section class="empathy item-portfolio">
-		<p>Empathy - Hackaton Bellatrix</p>
-		<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/empathy.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/emphaty-2.jpg"></a></div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="repo-link">
-    	<a href="https://github.com/hdf1986/hackatrix"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-    	<p>github repo</p>
-    </div>
-    
-	</section>
-	<section class="galicia item-portfolio">
-		<p>BiomeTricks - Hackaton Galicia</p>
-		<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/landing"><img src="img/galicia.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/"><img src="img/galicia-2.jpg"></a></div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="repo-link">
-    	<a href="https://github.com/hdf1986/galicia"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-    	<p>github repo</p>
-    </div>
-	</section>
-</div>
-</article>
-</div>
-<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+		<div class="comun avatar-container">	
+			<img class="avatar" src="img/avatar.jpeg" title="avatar">
+		</div>
+		<div class="skills comun">
+			<p>Skills:</p>
+			<div class="logos1">	
+				<img class="logo" src="img/angular2.jpg" title="angular2">
+				<embed class="logo" src="img/react.svg" title="react"></embed>
+			</div>
+			<div class="logos2">	
+
+				<img class="logo" src="img/js.jpg" title="html">
+				<img class="logo" src="img/jquery.jpg" title="jquery">
+			</div>
+		</div>
+	</div>
+	<div id="portfolio">
+		<div class="demos">
+			<div class="glamit demo projects">
+				<h1>Glamit</h1>
+				<p>Some of the pages I've been working on Glamit e-commerce software company</p>
+				<div class="glamit-pages">
+					
+					<a href="http://www.carocuore.com/"><img alt="carocuore" src="img/carocuore.png"></a>
+					<a href="http://tienda.mimo.com.ar/"><img alt="mimo" src="img/mimocologo.png"></a>
+					<a href="https://www.portsaid.com.ar/"><img alt="portsaid" src="img/portsaid.jpg"></a>
+					<a href="http://www.sweet.com.ar/"><img alt="sweet" src="img/sweet.jpg"></a>
+					<a href="http://www.grisino.com/grisino.html"><img src="img/grisino.png"></a>
+					<a href="https://www.desiderata.com.ar/"><img src="img/desiderata.png"></a>
+				</div>	
+			</div>
+			<div class="projects demo">
+				<h1>Octolive</h1>
+				<p>When you manage or contribute in more than 1 active proyects in Github,<br> you start noticing that Github Notifications are pretty boring.<br>
+				This proyect tries to solve that, providing a better notification system, in realtime!</p>
+				<a href="https://octolive.xyz">
+					<img class="p-img" src="img/octolive.png">
+				</a>
+			</div>
+			<div class="demo">
+				<h1>World Clocks</h1>
+				<p>A few clock from important cities with his respective hours made with jquery moments library.</p>
+				<a href="http://guadalazzo.github.io/world-clocks">
+					<img class="r-img" src="img/relojes.png" alt="World clocks">
+				</a>
+			</div>
+			<div class="demo">
+				<h1>To do List</h1>	
+				<p>A task list for get an organised day, and tick the ready ones, use jquery and local data for saving it.</p>
+				<a href="http://guadalazzo.github.io/to-do-list/">
+					<img class="t-img" src="img/todolistcaptura.png" alt="to do list">
+				</a> 
+			</div>
+			<!-- <div class="demo">
+				<h1>Piano demo</h1>
+				<p>A simple piano application with click action keys.</p>
+				<a href="http://guadalazzo.github.io/piano-demo/">
+					<img class="p-img" src="img/piano.png" alt="Piano demo">
+				</a>
+			</div> -->
+		</div>
+	</div>
+	<div id="contact">
+		<form action="https://formspree.io/lupe_m13_92@hotmail.com" method="POST">
+				<h1>Contact me:</h1>	
+				
+				<input class="nameandemail" type="text" name="Name" placeholder="Name">
+				<input class="nameandemail" type="email" name="_replyto" placeholder="Email"> 
+				<textarea class="message" name="textarea" rows="10" cols="50" placeholder="Message"></textarea>
+				<input class="button submit" type="submit" value="submit">
+				<h1>Also can find me at:</h1>
+				<div class="icons">	
+				<a href="http://www.linkedin.com/in/guadalupe-jazmin-lazzo-764243137"><i class="fa fa-linkedin fa-4x " aria-hidden="true"></i></a>
+				<a href="https://github.com/guadalazzo"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+				<a href="mailto:lupe_m13_92@hotmail.com"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+				</div>
+		</form>
+	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-<script>
+<script type="text/javascript">
+	
 $(document).ready(function(){
 	$("nav a").click(function(e){
 		e.preventDefault();
 		var elemento = $($(this).attr("href"));
-		$('html,body').animate({scrollTop: elemento.offset().top},'slow');
+		$('html,body').animate({scrollTop: elemento.offset().top},'slow')
 		return false;
+	})
+
+	$('.navbar-toggled').click( function(){
+		$('.navbar').toggleClass('toggled');
 	});
-});
-
-$('.button-scroll').click(function(){
-    $('html, body').animate({scrollTop:$(window).height()}, 700);
-    });
-
-$(window).stellar({
-				horizontalScrolling: false,
-				responsive: true,
-				parallaxBackgrounds: true,
-				hideDistantElements: false,
-	  		verticalOffset: -100,
-	  		positionProperty: 'transform'
-			});
+	$(window).scroll(function(){
+		// Esto se va a ejecutar CADA VEZ QUE LA PAGINA SE MUEVA
+		var posicionEnY = $(this).scrollTop();
+		if(posicionEnY>0) {
+			$('.nav-bar').addClass('active');
+		}else{
+			$('.nav-bar').removeClass('active');
+		}
+	});
+}); 
 </script>
- <script>
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    autoplay: {
-    	delay: 5000,
-  	},
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
-  </script>
 </body>
 </html>
