@@ -38,182 +38,214 @@
 		</ul>
 	</article>
 	<div class="with-header">
-	<nav> 
-		<a href="#home">home</a>
-		<a href="#about">about</a>
-		<a href="#portfolio">portfolio</a>
-	</nav>
-<article id="about">
-	<section>
-		<h2>Who am I?</h2>
-		<p>
-			My name is Guadalupe Jazmin Lazzo, I'm 25 years old and I'm a frontend developer, Co-organizer at freeCodeCamp, I actively participate at development meetups, love to participate in hackatons, strongly support appling UX and UI design, also working with frameworks as React. Currently I'm studying Engineering in information systems at UTN, also I did a technical degree of Design and Promotion Advertising, As well as a technical degree in production of clothing. I'm passionate about technology and creating new things!
-		</p>
-		<h3>Skills</h3>
-		<ul   class="items">
-			<li>
-			<i class="fab fa-html5 fa-3x"></i>
-				<p>Html5</p>
-			</li>
-			<li>
-			<i class="fab fa-css3-alt fa-3x"></i>
-			<p>Css3</p>
-			</li>
-			<li >
-			<i class="fab fa-js fa-3x"></i>
-				<p>Javascript</p>
-			</li>
-			<li>
-			<i class="fab fa-react fa-3x"></i>	
-				<p>React</p>
-			</li>
-			<li>
-			<i class="fab fa-angular fa-3x"></i>	
-				<p>AngularJs</p>
-			</li>
-			<li>
-			<i class="fab fa-sass fa-3x"></i>
-				<p>Sass</p>
-			</li>
-			<li>
-			<i class="fab fa-less fa-3x"></i>	
-				<p>Less</p>
-			</li>
-			<li>
-			<i class="fab fa-git fa-3x"></i>	
-			<p>Git</p>
-			</li>
-			<li>
-			<i class="fab fa-linux fa-3x"></i>	
-				<p>Linux</p>
-			</li>
-		</ul>
-	</section>
-</article>
-<article id="portfolio">
-	<h2>Portfolio</h2>
-	<section class="clara item-portfolio">
-			
-		<p>Clara ibarguren</p>
-		<div class="swiper-container">
-	    <!-- Additional required wrapper -->
-	    <div class="swiper-wrapper">
-	        <!-- Slides -->
-	        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/clara-home.jpg"></a></div>
-	        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/eshop.html"><img src="img/clara-galeria.jpg"></a></div>
-	        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/claraficha.jpg"></a></div>
-	    </div>
-	    <!-- If we need pagination -->
-	    <div class="swiper-pagination"></div>
-	</section> 
-	<section class="babycottons item-portfolio">
-		<p>Babycottons</p>
-		<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/babycottons.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/eshop.html"><img src="img/baby-locales.jpg"></a></div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-	</section>
-	<section class="octolive item-portfolio">
-		<p>Octolive</p>
-		<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octolive.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octo-inside.jpg"></a></div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <div class="repo-link">
-    	<a href="https://github.com/6700/octolive"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-    	<p>github repo</p>
-    </div>
-	</section>
-	<section class="empathy item-portfolio">
-		<p>Empathy - Hackaton Bellatrix</p>
-		<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/empathy.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/emphaty-2.jpg"></a></div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="repo-link">
-    	<a href="https://github.com/hdf1986/hackatrix"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-    	<p>github repo</p>
-    </div>
-    
-	</section>
-	<section class="galicia item-portfolio">
-		<p>BiomeTricks - Hackaton Galicia</p>
-		<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/landing"><img src="img/galicia.jpg"></a></div>
-        <div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/"><img src="img/galicia-2.jpg"></a></div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="repo-link">
-    	<a href="https://github.com/hdf1986/galicia"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-    	<p>github repo</p>
-    </div>
-	</section>
-</div>
-</article>
-</div>
-<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-<script>
-$(document).ready(function(){
-	$("nav a").click(function(e){
-		e.preventDefault();
-		var elemento = $($(this).attr("href"));
-		$('html,body').animate({scrollTop: elemento.offset().top},'slow');
-		return false;
-	});
-});
+		<nav> 
+			<a href="#home">home</a>
+			<a href="#about">about</a>
+			<a href="#portfolio">portfolio</a>
+			<a href="#contact">contact</a>
+		</nav>
+		<article id="about">
+			<section>
+				<h2>Who am I?</h2>
+				<p>
+					My name is Guadalupe Jazmin Lazzo, I'm 25 years old and I'm a frontend developer, Co-organizer at freeCodeCamp, I actively participate at development meetups, love to participate in hackatons, strongly support appling UX and UI design, also working with frameworks as React. Currently I'm studying Engineering in information systems at UTN, also I did a technical degree of Design and Promotion Advertising, As well as a technical degree in production of clothing. I'm passionate about technology and creating new things!
+				</p>
+				<h3>Skills</h3>
+				<ul   class="items">
+					<li>
+						<i class="fab fa-html5 fa-3x"></i>
+						<p>Html5</p>
+					</li>
+					<li>
+						<i class="fab fa-css3-alt fa-3x"></i>
+						<p>Css3</p>
+					</li>
+					<li >
+						<i class="fab fa-js fa-3x"></i>
+						<p>Javascript</p>
+					</li>
+					<li>
+						<i class="fab fa-react fa-3x"></i>	
+						<p>React</p>
+					</li>
+					<li>
+						<i class="fab fa-angular fa-3x"></i>	
+						<p>AngularJs</p>
+					</li>
+					<li>
+						<i class="fab fa-sass fa-3x"></i>
+						<p>Sass</p>
+					</li>
+					<li>
+						<i class="fab fa-less fa-3x"></i>	
+						<p>Less</p>
+					</li>
+					<li>
+						<i class="fab fa-git fa-3x"></i>	
+						<p>Git</p>
+					</li>
+					<li>
+						<i class="fab fa-linux fa-3x"></i>	
+						<p>Linux</p>
+					</li>
+				</ul>
+			</section>
+		</article>
+		<article id="portfolio">
+			<h2>Portfolio</h2>
+			<section class="awada item-portfolio">
 
-$('.button-scroll').click(function(){
-    $('html, body').animate({scrollTop:$(window).height()}, 700);
-    });
+				<p>Awada</p>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a target="_blank" href="http://www.awada.com.ar/"><img src="img/awada.jpg"></a></div>
+						<div class="swiper-slide"><a target="_blank" href="http://www.awada.com.ar/e-shop.html"><img src="img/awada2-galeria.jpg"></a></div>
+						<div class="swiper-slide"><a target="_blank" href="http://www.awada.com.ar/lookbook-18"><img src="img/awada-look.jpg"></a></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</section> 
+				<section class="clara item-portfolio">
 
-$(window).stellar({
-				horizontalScrolling: false,
-				responsive: true,
-				parallaxBackgrounds: true,
-				hideDistantElements: false,
-	  		verticalOffset: -100,
-	  		positionProperty: 'transform'
+					<p>Clara ibarguren</p>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/clara-home.jpg"></a></div>
+							<div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/e-shop.html"><img src="img/clara-galeria.jpg"></a></div>
+							<div class="swiper-slide"><a target="_blank" href="https://www.claraibarguren.com/"><img src="img/claraficha.jpg"></a></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</section> 
+					<section class="babycottons item-portfolio">
+						<p>Babycottons</p>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><a target="_blank" href="http://www.babycottons.com.ar/lookbook-fw18"><img src="img/babycottons.jpg"></a></div>
+								<div class="swiper-slide"><a target="_blank" href="http://www.babycottons.com.ar/locales"><img src="img/baby-locales.jpg"></a></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</section>
+						<section class="octolive item-portfolio">
+							<p>Octolive</p>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octolive.jpg"></a></div>
+									<div class="swiper-slide"><a target="_blank" href="https://octolive.xyz/"><img src="img/octo-inside.jpg"></a></div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="repo-link">
+									<a href="https://github.com/6700/octolive"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+									<p>github repo</p>
+								</div>
+							</section>
+							<section class="empathy item-portfolio">
+								<p>Empathy - Hackaton Bellatrix</p>
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/empathy.jpg"></a></div>
+										<div class="swiper-slide"><a target="_blank" href="https://hdf1986.github.io/hackatrix/"><img src="img/emphaty-2.jpg"></a></div>
+									</div>
+									<div class="swiper-pagination"></div>
+									<div class="repo-link">
+										<a href="https://github.com/hdf1986/hackatrix"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+										<p>github repo</p>
+									</div>
+
+								</section>
+								<section class="galicia item-portfolio">
+									<p>BiomeTricks - Hackaton Galicia</p>
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/landing"><img src="img/galicia.jpg"></a></div>
+											<div class="swiper-slide"><a target="_blank" href="http://galicia.herokuapp.com/"><img src="img/galicia-2.jpg"></a></div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="repo-link">
+											<a href="https://github.com/hdf1986/galicia"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+											<p>github repo</p>
+										</div>
+									</section>
+									<section class="galicia item-portfolio">
+									<p>Charla + Workshop - Css flex + grid</p>
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><a target="_blank" href="https://github.com/guadalazzo/workshop-css-grid"><img src="img/charlacollage.jpg"></a></div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="repo-link">
+											<a href="https://github.com/guadalazzo/workshop-css-grid"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+											<p>github repo</p>
+										</div>
+									</section>
+							</article>
+			<article id="contact">
+				<h2>How to contact me?</h2>
+				<ul class="contact-me">
+					<li>
+						En Github
+					<a href="https://github.com/guadalazzo"><i class="fab fa-github fa-5x" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					En Linkedin
+					<a href="http://www.linkedin.com/in/guadalupe-jazmin-lazzo-764243137"><i class="fab fa-linkedin fa-5x " aria-hidden="true"></i></a>
+				</li>
+				<li>
+					Por email
+					<a href="mailto:lupe_m13_92@hotmail.com"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+				</li>
+				</ul>
+			</article>
+			</div>
+	</div>
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("nav a").click(function(e){
+				e.preventDefault();
+				var elemento = $($(this).attr("href"));
+				$('html,body').animate({scrollTop: elemento.offset().top},'slow');
+				return false;
 			});
-</script>
- <script>
-  var mySwiper = new Swiper ('.swiper-container', {
+		});
+
+		$('.button-scroll').click(function(){
+			$('html, body').animate({scrollTop:$(window).height()}, 700);
+		});
+
+		$(window).stellar({
+			horizontalScrolling: false,
+			responsive: true,
+			parallaxBackgrounds: true,
+			hideDistantElements: false,
+			verticalOffset: -100,
+			positionProperty: 'transform'
+		});
+	</script>
+	<script>
+		var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
 
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+    	el: '.swiper-pagination',
     },
     autoplay: {
     	delay: 5000,
-  	},
+    },
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    	nextEl: '.swiper-button-next',
+    	prevEl: '.swiper-button-prev',
     },
 
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar',
+    	el: '.swiper-scrollbar',
     },
   })
-  </script>
+</script>
 </body>
 </html>
