@@ -15,11 +15,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;	
+    @media (max-width:1000px){
+    	justify-content: space-around;
+    }
 		a{
 			color: $millenialpink;
 			margin: 0 40px;
 			@media (max-width:1000px){
-				margin: 0 4%;
+				margin: 0;
 			}
 			text-transform: capitalize;
 			font-size: 21px;
