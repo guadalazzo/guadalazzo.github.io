@@ -372,6 +372,7 @@ nav {
 #ux-portfolio {
   width: 100%;
   height: 84vh;
+  padding-top: 2em;
   display: flex;
   margin: 2em auto;
   flex-direction: column;
