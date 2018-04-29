@@ -66,25 +66,47 @@ a{
 }
 .sandy{
 	background: linear-gradient(270deg, #48bdff, #ff0571, #b745c3);
-background-size: 600% 600%;
+	background-size: 600% 600%;
+	-webkit-animation: AnimationName 3s ease infinite;
+	-moz-animation: AnimationName 3s ease infinite;
+	animation: AnimationName 3s ease infinite;
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@keyframes AnimationName { 
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	&#home{
+		background-size: 150%;
+	}
+	.avatar{
+		-webkit-animation: Animation2 3s ease infinite;
+		-moz-animation: Animation2 3s ease infinite;
+		animation: Animation2 3s ease infinite;
+		@-webkit-keyframes Animation2 {
+	    0%{filter: saturate(275%);}
+	    50%{filter: saturate(100%);}
+	    100%{filter: saturate(275%);}
+		}
+		@-moz-keyframes Animation2 {
+	    0%{filter: saturate(275%);}
+	    50%{filter: saturate(100%);}
+	    100%{filter: saturate(275%);}
+		}
+		@keyframes Animation2 { 
+		    0%{filter: saturate(275%);}
+	    50%{filter: saturate(100%);}
+	    100%{filter: saturate(275%);}
+	}
 
--webkit-animation: AnimationName 3s ease infinite;
--moz-animation: AnimationName 3s ease infinite;
-animation: AnimationName 3s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+	}
 }

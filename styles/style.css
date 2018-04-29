@@ -89,6 +89,33 @@ a {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+  .sandy#home {
+    background-size: 150%; }
+  .sandy .avatar {
+    -webkit-animation: Animation2 3s ease infinite;
+    -moz-animation: Animation2 3s ease infinite;
+    animation: Animation2 3s ease infinite; }
+@-webkit-keyframes Animation2 {
+  0% {
+    filter: saturate(275%); }
+  50% {
+    filter: saturate(100%); }
+  100% {
+    filter: saturate(275%); } }
+@-moz-keyframes Animation2 {
+  0% {
+    filter: saturate(275%); }
+  50% {
+    filter: saturate(100%); }
+  100% {
+    filter: saturate(275%); } }
+@keyframes Animation2 {
+  0% {
+    filter: saturate(275%); }
+  50% {
+    filter: saturate(100%); }
+  100% {
+    filter: saturate(275%); } }
 @keyframes fade-in {
   from {
     opacity: 0; }
