@@ -13,6 +13,9 @@
 	#presentation{
 		width: 90%;
 		height: 50%;
+		@media (max-width:1000px){
+			height: 62%
+		}
 		//margin: auto;
     margin-top: 7%;
 		display: flex; 

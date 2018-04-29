@@ -45,6 +45,9 @@
 		justify-content: space-evenly;
 		align-items: center;
 		height: 102%;
+		@media (max-width:1000px){
+			 height: 110%;
+		}
 		width: 90%;
 		margin: auto;
 		flex-direction: column;

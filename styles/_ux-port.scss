@@ -38,6 +38,9 @@
 			font-size: 21px;
 			letter-spacing: 1px;
 			line-height: 30px;
+			@media (max-width: 1000px){
+				line-height: 21px;
+			}
 			margin: 1em;
 		}
 		a{
