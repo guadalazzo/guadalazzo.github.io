@@ -226,7 +226,7 @@ nav {
           font-size: 16px; } }
       @media (max-width: 1000px) {
         #about section p {
-          line-height: 17px; } }
+          line-height: 20px; } }
     #about section h3 {
       color: #f7b6ff;
       font-size: 24px; }
@@ -269,6 +269,9 @@ nav {
     color: #E8F0FF; }
   #portfolio .item-portfolio {
     margin: 1em auto; }
+    @media (max-width: 1000px) {
+      #portfolio .item-portfolio {
+        margin: 0; } }
   #portfolio h2 {
     color: #f7b6ff;
     font-size: 30px;
@@ -292,16 +295,27 @@ nav {
     width: 100%;
     height: 50px;
     z-index: 9;
-    color: #f7b6ff;
-    text-align: center;
-    transition: 0.5s ease-in-out; }
-    #portfolio .repo-link p, #portfolio .repo-link a {
-      color: #f7b6ff;
-      font-size: 14px;
-      text-decoration: none; }
-    #portfolio .repo-link:hover p, #portfolio .repo-link:hover a {
+    text-align: center; }
+    #portfolio .repo-link .btn {
+      background: linear-gradient(263deg, #e668e2, #ea247f, #2caac5);
       color: white;
-      text-shadow: 2px 0px 11px #000000; }
+      width: 95px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto;
+      padding: 3px;
+      border-radius: 5px;
+      transition: 0.5s ease-in-out; }
+    #portfolio .repo-link p, #portfolio .repo-link a {
+      font-size: 15px;
+      text-decoration: none; }
+    #portfolio .repo-link:hover .btn {
+      -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.82);
+      -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.82);
+      box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.82); }
+    #portfolio .repo-link:hover p, #portfolio .repo-link:hover a {
+      color: white; }
   #portfolio .swiper-container {
     height: 75vh;
     width: 95%;
@@ -371,7 +385,6 @@ nav {
 
 #ux-portfolio {
   width: 100%;
-  height: 84vh;
   padding-top: 2em;
   display: flex;
   flex-direction: column;
@@ -379,10 +392,16 @@ nav {
   justify-content: space-around; }
   @media (max-width: 1000px) {
     #ux-portfolio {
-      height: fit-content; } }
+      height: 183vh; } }
+  #ux-portfolio h1 {
+    font-size: 32px;
+    color: #f7b6ff;
+    text-align: center;
+    margin-bottom: 1em; }
   #ux-portfolio section {
     width: 80%;
-    height: 32%;
+    height: 40vh;
+    margin-bottom: 2em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -390,24 +409,30 @@ nav {
     @media (max-width: 1000px) {
       #ux-portfolio section {
         margin-top: 1em; } }
-    #ux-portfolio section h1 {
-      font-size: 30px;
-      color: #f7b6ff;
-      text-align: center; }
     #ux-portfolio section h2 {
       font-size: 24px;
       text-align: center;
       color: #E8F0FF; }
     #ux-portfolio section p {
       text-align: center;
-      color: #ff8dcc;
-      font-size: 21px;
-      letter-spacing: 1px; }
-    #ux-portfolio section a {
-      font-size: 25px;
       color: white;
-      transition: 0.3s ease-in-out; }
+      font-size: 21px;
+      letter-spacing: 1px;
+      line-height: 30px;
+      margin: 1em; }
+    #ux-portfolio section a {
+      font-family: "Do Hyeon", sans-serif;
+      font-weight: 500;
+      font-size: 25px;
+      display: block;
+      padding: 5px;
+      color: aliceblue;
+      background: linear-gradient(263deg, #e668e2, #ea247f, #2caac5);
+      border-radius: 5px;
+      transition: 0.5s ease-in-out; }
       #ux-portfolio section a:hover {
-        color: #F7B3D3; }
+        -webkit-box-shadow: 0px 1px 23px 0px rgba(0, 0, 0, 0.82);
+        -moz-box-shadow: 0px 1px 23px 0px rgba(0, 0, 0, 0.82);
+        box-shadow: 0px 1px 23px 0px rgba(0, 0, 0, 0.82); }
 
 /*# sourceMappingURL=style.css.map */
