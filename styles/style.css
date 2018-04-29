@@ -90,7 +90,7 @@ a {
   100% {
     background-position: 0% 50%; } }
   .sandy#home {
-    background-size: 150%; }
+    background-size: 150% 100%; }
   .sandy .avatar {
     -webkit-animation: Animation2 3s ease infinite;
     -moz-animation: Animation2 3s ease infinite;
