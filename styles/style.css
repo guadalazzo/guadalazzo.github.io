@@ -670,6 +670,7 @@ nav a:hover {
 @media (max-width: 1000px) {
   .section-title {
     font-size: 24px;
+    margin-top: 4rem;
   }
 }
 
@@ -681,6 +682,7 @@ nav a:hover {
   align-content: center;
   gap: 2rem;
   font-family: "Poppins", sans-serif;
+  margin-top: 6rem;
   /* line */
   /* columns*/
   /* row gaps */
