@@ -1,110 +1,118 @@
-@import '_var.scss';
-	.with-header{
-		background-color: $violet;
-	}
-	nav{
-		background: -moz-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-		width: 100%;	
-    height: 60px;
-    position: sticky;
-    z-index: 9;
-    top: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;	
-    @media (max-width:1000px){
-    	justify-content: space-around;
+@import "_var.scss";
+.with-header {
+  background-color: $bg-body;
+}
+nav {
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  z-index: 9;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: $inter;
+  @media (max-width: 1000px) {
+    justify-content: space-around;
+  }
+  a {
+    color: $bluegray;
+    margin: 0 40px;
+    @media (max-width: 1000px) {
+      margin: 0;
     }
-		a{
-			color: $millenialpink;
-			margin: 0 40px;
-			@media (max-width:1000px){
-				margin: 0;
-			}
-			text-transform: capitalize;
-			font-size: 21px;
-			text-style: none;
-	    text-decoration: none;
-	    transition: 0.3s;
-	    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
-	    &:hover{
-	    	color: $bluegray;
-	    }
-		}
-	}
-#about{
-	height: 100vh;
-	width: 100%;
-	padding-top: 2em;
-	font-family: $merriweather;
-	section{
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		height: 102%;
-		@media (max-width:1000px){
-			 height: 110%;
-		}
-		width: 90%;
-		margin: auto;
-		flex-direction: column;
-		h2{
-			color: $lightpink;
-			font-size: 30px;
-		@media (max-width:1000px){
-			font-size: 24px;
-		}
-			text-align: center;
-		}
-		p{
-			color: $bluegray;
-			text-align: center;
-			font-size: 22px;
-		@media (max-width:1000px){
-			font-size: 16px;
-		}
-    	line-height: 31px;
-		@media (max-width:1000px){
-			line-height: 20px;
-		}
-    	letter-spacing: 1.5px;
-		}
-		h3{
-			color: $lightpink;
-			font-size: 24px;
-		}
-		.items{
-			display: flex;
-			justify-content: space-around;
-			text-align: center;
-			flex-wrap: wrap;
-			width: 80%;
-			height: 40%;
-				@media (max-width:1000px){
-					height: 26%;
-					width: 100%;
-				}
-			li{
-				width: 20%;
-				text-align: center;
-				i{
-					color: $millenialpink;
-				}
-				.ux-icon{
-					color: $millenialpink;
-					font-family: 'Do Hyeon', sans-serif;
-					font-size: 48px;
-				}
-				p{
-					color: $millenialpink;
-					@media (max-width:1000px){
-					font-size: 12px;
-				}
-				}
-			}
-		}
-	}
+    text-transform: capitalize;
+    font-size: 21px;
+    text-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $bluegray;
+    }
+  }
+}
+#about {
+  height: 100vh;
+  width: 100%;
+  padding-top: 2em;
+  font-family: $inter;
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    @media (max-width: 1000px) {
+      height: 110%;
+    }
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    h2 {
+      color: $primary;
+      font-size: 30px;
+      margin-bottom: 2rem;
+      @media (max-width: 1000px) {
+        font-size: 24px;
+      }
+      text-align: left;
+    }
+    p {
+      color: $bluegray;
+      text-align: left;
+      font-size: 22px;
+      @media (max-width: 1000px) {
+        font-size: 16px;
+      }
+      line-height: 31px;
+      @media (max-width: 1000px) {
+        line-height: 20px;
+      }
+      letter-spacing: 1.5px;
+    }
+    h3 {
+      color: $primary;
+      font-size: 24px;
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 1000px) {
+        height: 26%;
+        width: 100%;
+      }
+      li {
+        width: 20%;
+        text-align: center;
+        i {
+          color: $primary;
+        }
+        .ux-icon {
+          color: $primary;
+          font-family: "Do Hyeon", sans-serif;
+          font-size: 48px;
+        }
+        p {
+          color: $primary;
+          @media (max-width: 1000px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }

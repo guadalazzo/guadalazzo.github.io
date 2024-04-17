@@ -2,39 +2,36 @@
 #contact{
 	padding-top: 2em;
 	height: 100vh;
-	width: 100%;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	font-family: $inter;
+	margin: auto;
 		h2{
 		color: $lightpink;
 		font-size: 30px;
-		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 2rem;
 		margin-top: 20px;
 		@media (max-width:1000px){
 		font-size: 24px;
 		}
 	}
 	p.subtitle{
-		text-align: center;
-    font-size: 20px;
     color: $bluegray;
-    width: 80%;
-    margin: 1em auto;
-	}
-	hr{
-		width: 7%;
+    margin-bottom: 1em;
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 1.5px
 	}
 	.contact-me{
 		width: 90%;
+		display: flex;
+		gap: 2rem;
+		margin-top: 1rem;
 		@media (max-width:1000px){
 			height: 75%;
 		}
-		display: flex;
-		align-items: center;
-		margin: 2em auto;
-		justify-content: space-around;
 			@media (max-width:1000px){
 				flex-direction: column;
 			}
