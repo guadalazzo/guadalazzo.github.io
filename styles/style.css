@@ -331,6 +331,11 @@ nav a {
     margin: 0;
   }
 }
+@media (max-width: 1000px) {
+  nav a {
+    font-size: 18px;
+  }
+}
 nav a:hover {
   color: #E8F0FF;
 }
@@ -532,6 +537,7 @@ nav a:hover {
   flex-direction: column;
   font-family: "Inter", sans-serif;
   margin: auto;
+  margin-top: 3rem;
 }
 #contact h2 {
   color: #f7b6ff;
@@ -591,7 +597,7 @@ nav a:hover {
 }
 @media (max-width: 1000px) {
   #ux-portfolio {
-    height: 183vh;
+    height: 50vh;
   }
 }
 #ux-portfolio h1 {
@@ -618,6 +624,7 @@ nav a:hover {
 #ux-portfolio section h2 {
   font-size: 24px;
   color: #E8F0FF;
+  margin-bottom: 1rem;
 }
 #ux-portfolio section p {
   color: white;

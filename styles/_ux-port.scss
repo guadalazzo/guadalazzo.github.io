@@ -5,7 +5,7 @@
   font-family: $inter;
 
   @media (max-width: 1000px) {
-    height: 183vh;
+    height: 50vh;
   }
   h1 {
     font-family: $inter;
@@ -29,6 +29,7 @@
     h2 {
       font-size: 24px;
       color: $bluegray;
+      margin-bottom: 1rem;
     }
     p {
       color: white;

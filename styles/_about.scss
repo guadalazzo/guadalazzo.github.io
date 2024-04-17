@@ -40,6 +40,9 @@ nav {
     text-transform: capitalize;
     font-size: 21px;
     text-style: none;
+    @media (max-width: 1000px) {
+      font-size: 18px;
+    }
     text-decoration: none;
     transition: 0.3s;
     &:hover {
